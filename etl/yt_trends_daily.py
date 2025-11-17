@@ -48,7 +48,7 @@ def fetch_youtube_trending():
 def fetch_google_trends():
     pytrends = TrendReq(hl="en-US", tz=360)
 
-    # you can later swap ["YouTube"] for topic-specific keywords
+   
     pytrends.build_payload(["YouTube"], cat=0, timeframe="now 1-d", geo="US")
     data = pytrends.interest_over_time()
 
